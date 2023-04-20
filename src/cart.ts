@@ -22,7 +22,7 @@ export default class Cart {
 
     removeItem(itemId: number): void {
         
-        const ind: any = this._items.find(el => el.id === itemId);
+        const ind: number = this._items.findIndex(el => el.id === itemId);
         this._items.splice(ind, 1);
     }
     }
